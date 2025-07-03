@@ -242,7 +242,10 @@ async function loadClasses() {
     
     document.getElementById("content").innerHTML = `
       <div id="classOverview">
-        <h2>Klassenübersicht</h2>
+        <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 20px;">
+          <h2>Klassenübersicht</h2>
+          <button onclick="logout()" style="background-color: #dc3545; color: white;">Abmelden</button>
+        </div>
         <div id="searchContainer">
           <input type="text" id="searchInput" placeholder="Klasse suchen..." onkeyup="filterClasses()" />
         </div>
