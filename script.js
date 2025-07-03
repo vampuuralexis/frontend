@@ -495,3 +495,9 @@ document.addEventListener("DOMContentLoaded", () => {
     showLoginPage();
   }
 });
+
+// Logout function
+function logout() {
+  localStorage.removeItem("is_logged_in");
+  showLoginPage();
+}
