@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8" />
+  <title>Klassenverwaltung</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1>📚 Klassenverwaltungstool</h1>
+    <nav>
+     <a href="#" onclick="goToStartseite(); return false;">Startseite</a>
+      <a href="#" onclick="localStorage.setItem('is_logged_in', 'false'); showLoginPage();">Abmelden</a>
+    </nav>
+  </header>
+
+<main id="content">
+  <!-- Dynamic content will be loaded here by script.js -->
+</main>
+
+
+  <footer>
+    <p>&copy; 2025 Deine Schule</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
