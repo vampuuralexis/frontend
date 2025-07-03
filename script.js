@@ -230,10 +230,6 @@ function showRegisterPage() {
   `;
 }
 
-// Show main page (class overview)
-function goToStartseite() {
-  loadClasses();
-}
 
 async function loadClasses() {
   try {
