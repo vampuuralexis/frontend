@@ -3,6 +3,21 @@ const apiBase = location.hostname === 'localhost'
   ? 'http://localhost:3000/api' // local backend
   : 'https://backend-production-34fd.up.railway.app/api'; // deployed backend
 
+if (localStorage.getItem("is_logged_in") === "true") {
+  showMainPage();
+} else {
+  showLoginPage();
+}
+
+function goToStartseite() {
+  if (localStorage.getItem("is_logged_in") === "true") {
+    showMainPage();
+  } else {
+    showLoginPage();
+  }
+}
+
+
 // Validation functions
 function validateUsername(username) {
   if (!username || username.length < 3) {
